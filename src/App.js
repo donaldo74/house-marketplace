@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import Explore from './pages/Explore'
 import Offers from './pages/Offers'
 import Profile from './pages/Profile'
-import SignIn from './pages/SignIn'
+import SignIn from './pages/Signin'
 import SignUp from './pages/SignUp'
 import ForgotPassword from './pages/ForgotPassword'
 

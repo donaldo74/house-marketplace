@@ -43,6 +43,7 @@ function Profile() {
           {changeDetails ? 'done' : 'change'}
         </p>
       </div>
+      
     </main>
   </div>
 }

@@ -9,6 +9,7 @@ import { getAuth } from 'firebase/auth';
 import { db } from '../firebase.config';
 import Spinner from '../components/Spinner';
 import shareIcon from '../assets/svg/shareIcon.svg';
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 function Listing() {
 	const [listing, setListing] = useState(null);
@@ -41,17 +42,18 @@ function Listing() {
 	return (
 		<main>
 			<Swiper slidesPerView={1} pagination={{ clickable: true }}>
-				{listing.imgUrls.map((url, index) => {
+				{listing.imgUrls.map((url, index) => (
 					<SwiperSlide key={index}>
 						<div
 							style={{
-								background: `url(${listing.imgUrls[index]})`,
+								background: `url(${listing.imgUrls[index]})
+								center no-repeat`,
 								backgroundSize: 'cover',
 							}}
 							className="swiperSlideDiv"
 						></div>
-					</SwiperSlide>;
-				})}
+					</SwiperSlide>
+				))}
 			</Swiper>
 
 			<div
